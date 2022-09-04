@@ -8,13 +8,15 @@ html {
 
 .container {
   text-align: center;
+  background-color: #f2ff00;
+  padding: 10px;
 }
 
 
 .container div {
   width: 80px;
   height: 80px;
-  background-color: purple;
+  background-color: #ffffff;
   margin: 0 5px;
   display: inline-block;
 }

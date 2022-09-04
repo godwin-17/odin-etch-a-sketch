@@ -10,6 +10,6 @@ console.log(divs);
 
 divs.forEach(div => {
   div.addEventListener("mouseover", ()=> {
-    div.style.backgroundColor = "red";
+    div.style.backgroundColor = "blue";
   });
 });
