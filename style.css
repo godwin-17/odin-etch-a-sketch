@@ -6,17 +6,19 @@ html {
   box-sizing: inherit;
 }
 
-.container {
-  text-align: center;
-  background-color: #f2ff00;
-  padding: 10px;
+:root {
+  --grid-cols: 1;
+  --grid-rows: 1;
 }
 
+.container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(var(--grid-cols), 50px);
+  grid-template-rows: repeat(var(--grid-rows), 50px);
 
-.container div {
-  width: 80px;
-  height: 80px;
-  background-color: #ffffff;
-  margin: 0 5px;
-  display: inline-block;
+}
+
+.grid-item {
+  border: 1px solid #000;
 }

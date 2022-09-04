@@ -1,15 +1,13 @@
 const container = document.querySelector(".container");
 
-for (let i = 0; i < 256; i++) {
-  let div = document.createElement("div");
-  container.appendChild(div);
+function makeGrid(rows, cols) {
+  container.style.setProperty("--grid-rows", rows);
+  container.style.setProperty("--grid-cols", cols);
+
+  for(let i = 0; i < (rows * cols); i++) {
+    let cell = document.createElement("div");
+    container.appendChild(cell).className = "grid-item";
+  }
 }
 
-const divs = document.querySelectorAll(".container div");
-console.log(divs);
-
-divs.forEach(div => {
-  div.addEventListener("mouseover", ()=> {
-    div.style.backgroundColor = "blue";
-  });
-});
+makeGrid(16, 16);
