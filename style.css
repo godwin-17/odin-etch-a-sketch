@@ -22,3 +22,8 @@ html {
 .grid-item {
   border: 1px solid #000;
 }
+
+.btn-container {
+  text-align: center;
+  margin: 10px 0;
+}

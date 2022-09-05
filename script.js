@@ -13,3 +13,27 @@ function makeGrid(rows, cols) {
 
 makeGrid(16, 16);
 
+button.addEventListener("click", () => {
+  let size = parseInt(prompt("Choose the grid size, maximum 100"));
+  
+  if (size > 100) {
+    alert("Higher than 100 try a smaller number");
+  } else if (size < 0) {
+    alert("Grid too small");
+  } else {
+    document.querySelectorAll(".grid-item").forEach(e => e.remove());
+    makeGrid(size, size);
+  }
+});
+
+
+
+// const del = document.querySelector("#del");
+
+// del.addEventListener("click", () => {
+//   // const grid = document.querySelectorAll(".grid-item");
+
+//   document.querySelectorAll(".grid-item").forEach(e => e.remove());
+//   // container.removeChild(grid);
+//   // Array.prototype.forEach
+// })
