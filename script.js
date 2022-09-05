@@ -1,4 +1,5 @@
 const container = document.querySelector(".container");
+const button = document.querySelector("button");
 
 function makeGrid(rows, cols) {
   container.style.setProperty("--grid-rows", rows);
@@ -11,3 +12,4 @@ function makeGrid(rows, cols) {
 }
 
 makeGrid(16, 16);
+
