@@ -23,17 +23,12 @@ button.addEventListener("click", () => {
   } else {
     document.querySelectorAll(".grid-item").forEach(e => e.remove());
     makeGrid(size, size);
+
   }
 });
 
-
-
-// const del = document.querySelector("#del");
-
-// del.addEventListener("click", () => {
-//   // const grid = document.querySelectorAll(".grid-item");
-
-//   document.querySelectorAll(".grid-item").forEach(e => e.remove());
-//   // container.removeChild(grid);
-//   // Array.prototype.forEach
-// })
+container.addEventListener("mouseover", (e) => {
+  if (e.target.className === "grid-item") {
+    e.target.style.backgroundColor = "black";
+  }
+})
